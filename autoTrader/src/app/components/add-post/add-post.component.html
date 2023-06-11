@@ -1,0 +1,81 @@
+<section class="signup container">
+  <h1 class="entry-title"><span>Add post</span></h1><hr>
+  <form class="form-horizontal" method="post" name="signup" id="signup">
+    <div class="form-group">
+      <label class="control-label col-sm-3">Title<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="text" class="form-control" name="text" id="title"
+                 placeholder="Wpisz tytuł aukcji" value="" [(ngModel)]="credentials.title">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Image<span class="text-danger">*</span></label>
+      <div class="col-md-8 col-sm-9">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+          <input type="text" class="form-control" name="image" id="image" placeholder="image"
+                 value="" [(ngModel)]="credentials.image">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Text<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="text" class="form-control" name="text" id="text"
+                 placeholder="Wpisz hasło (5-15 znaków)" value="" [(ngModel)]="credentials.text">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Rok produkcji<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="number" class="form-control" name="year" id="year"
+                 placeholder="Wpisz rok produkcji)" value="" [(ngModel)]="credentials.year">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Silnik<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="number" class="form-control" name="engine" id="engine"
+                 placeholder="Wpisz pojemność silnika)" value="" [(ngModel)]="credentials.engine">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Przebieg<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="number" class="form-control" name="trip" id="trip"
+                 placeholder="Wpisz przebieg)" value="" [(ngModel)]="credentials.trip">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3">Cena<span class="text-danger">*</span></label>
+      <div class="col-md-5 col-sm-8">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="number" class="form-control" name="price" id="price"
+                 placeholder="Wpisz cenę)" value="" [(ngModel)]="credentials.price">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-xs-offset-3 col-xs-10">
+        <button (click)="addPost()" name="Submit" type="submit" class="btn btn-primary">Add post
+        </button>
+      </div>
+    </div>
+  </form>
+</section>

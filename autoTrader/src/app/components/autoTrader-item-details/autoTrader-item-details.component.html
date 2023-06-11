@@ -1,0 +1,14 @@
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" [src]="image" alt="text">
+  <div class="card-body">
+    <h5 class="card-title">{{ title }}</h5>
+    <p class="card-text">{{ title }}</p>
+    <p class="card-text">{{ year }}</p>
+    <p class="card-text">{{ trip }}</p>
+    <p class="card-text" [priceColor]="price">{{ price }}</p>
+    <p class="card-text">{{ engine }}</p>
+  </div>
+  <button (click)="deletePost()" type="button" class="btn btn-danger">Usuń</button>
+  <button (click)="updatePost()" type="button" class="btn btn-danger">Edytuj</button>
+</div>

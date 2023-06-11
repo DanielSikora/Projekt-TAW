@@ -1,0 +1,10 @@
+<div class="card-group">
+<div *ngFor="let item of items$ | filter:filterText" >
+
+  <autoTrader-item [image]="item.image" [title]="item.title" [price]="item.price" [id]="item.id">
+  </autoTrader-item>
+  </div>
+
+</div>
+
+
